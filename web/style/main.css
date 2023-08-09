@@ -1,0 +1,64 @@
+:root {
+    --gray1: rgb(60,60,60);
+    --gray2: rgb(30,30,30);
+    --yellow: rgb(245, 167, 12);
+    --yellowHover: rgb(191, 131, 10);
+}
+
+body {
+    margin: 0;
+}
+
+.parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    position: absolute;
+    width: 50vw;
+    height: 40vh;
+    background-color: var(--gray2);
+    border: 2px solid var(--yellow);
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+}
+
+.container h1 {
+    color:  var(--yellow);
+    text-align: center;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 5px;
+    text-decoration: underline;
+}
+
+.container p {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+.container .button {
+    background-color: var(--yellow);
+    padding: 15px;
+    width: 20%;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 50px;
+    display: inline-block;
+    transform: translateY(70%);
+    cursor: pointer;
+}
+
+.container .button:hover {
+    transition: 0.5s;
+    background-color: var(--yellowHover);
+}
+
