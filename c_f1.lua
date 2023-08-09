@@ -36,3 +36,10 @@ addEventHandler("closeWeb", root, function()
 
     end
 end)
+
+bindKey("F2", "up", function()
+    if not opened then
+        return
+    end
+    executeBrowserJavascript(webBrowser, "document.querySelectorAll('.button').forEach(btn => {btn.style.backgroundColor = 'red';});")
+end)
